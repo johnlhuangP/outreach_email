@@ -11,5 +11,5 @@
   - it will attach the Sift PDF 1 pager, and also CC David and Tony automatically
 
 # Components:
-main.py - python script that logs into the Sift account and automates email sending process
-email_template.txt - email template that is subject to change
+1. main.py - python script that logs into the Sift account and automates email sending process
+2. email_template.txt - email template that is subject to change
