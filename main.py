@@ -1,4 +1,5 @@
 import csv
+import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -6,6 +7,7 @@ from email.mime.image import MIMEImage
 from email.mime.base import MIMEBase
 from email import encoders
 from jinja2 import Template
+from dotenv import load_dotenv
 
 def read_template(template_path):
     with open(template_path, 'r') as file:
@@ -16,8 +18,9 @@ def generate_email_content(template, data):
     return template.render(data)
 
 def send_email(subject, body, to_email,cc_emails, gif_path, pdf_path):
+    load_dotenv()
     from_email = 'team@letsift.com'  # Replace with your email
-    password = 'dfiy mdat mxmb bfxz'  # Replace with your email password
+    password = os.getenv("SIFT_EMAIL_PASSWORD")  # Replace with your email password
 
     msg = MIMEMultipart()
     msg['From'] = from_email
@@ -49,9 +52,10 @@ def send_email(subject, body, to_email,cc_emails, gif_path, pdf_path):
 
 def main():
     template_path = 'email_template.txt'
+    data_path = os.path.join('data', 'testemaildata.csv')
     template = read_template(template_path)
 
-    with open('email_data.csv', 'r') as csv_file:
+    with open(data_path, 'r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
 
         for row in csv_reader:
