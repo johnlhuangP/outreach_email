@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            font-size: 16px;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        img {
+            max-width: 60%;
+            height: auto;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Hi {{ organization }},</p>
+
+    <p>Hope this message finds you well! I'm John, a member of <a href="https://www.letsift.com/">Sift</a>, a browser extension that enables users to find secondhand alternatives with ease.</p>
+
+    <p>We've been following {{ organization }}’s incredible journey for a long time. Your commitment to {{ mission }} truly caught our eyes, and we couldn't resist reaching out.</p>
+
+    <p>Sift has been making headlines lately, featured in the <a href="https://www.bostonglobe.com/2023/09/11/metro/dumping-fast-fashion-new-ri-startup-is-making-it-easier-thrift-online/">Boston Globe</a>, <a href="https://www.bizjournals.com/rhodeisland/inno/stories/Awards/2022/12/06/meet-rhode-island-innos-2022-5-under-25.html">RI Business Journals</a>, <a href="https://www.browndailyherald.com/article/2023/10/meet-sift-a-thrifty-chrome-extension-developed-by-brown-students">Brown Daily Herald</a>, and more. We believe our tool aligns perfectly with {{ organization }}’s mission to {{ mission }}. With just a click of a button, Sift empowers users to discover amazing secondhand gems effortlessly. Check out the attached brochure & GIF below to see how Sift works!</p>
+
+    <p>We're excited to connect with you and explore potential partnership opportunities. Your insights and expertise would be invaluable as we continue to champion the secondhand movement. We’d love to schedule a chat at your convenience to discuss how we could partner together.</p>
+
+    <p>Thank you for your time, and looking forward to hearing back from you!</p>
+
+    <p>Best regards,<br>The Sift Team</p>
+
+    <img src="cid:gif2.gif" alt="Sift GIF">
+</body>
+</html>
