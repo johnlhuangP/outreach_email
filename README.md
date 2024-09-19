@@ -1,5 +1,5 @@
 # Email Outreach Script
-### Project Details: I created an email outreach pipeline to automate outreach efforts for Sift, a Brown University based startup.
+** Project Details **: I created an email outreach pipeline to automate outreach efforts for Sift, a Brown University based startup.
 ## How you can use this pipeline:
 1. Download VSCode and Python if you do not have them already.
    - VSCode: https://code.visualstudio.com/download
@@ -13,6 +13,6 @@
   - this will send out emails to every email on the csv
   - it will attach the Sift PDF 1 pager, and also CC David and Tony automatically
 
-# Components:
+## Components:
 1. main.py - python script that logs into the Sift account and automates email sending process
 2. email_template.txt - email template that is subject to change
