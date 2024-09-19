@@ -1,5 +1,5 @@
 # Email Outreach Script
-** Project Details **: I created an email outreach pipeline to automate outreach efforts for Sift, a Brown University based startup.
+**Project Details**: This project automates the process of sending personalized outreach emails using a provided CSV of recipients. It utilizes a Python script to log into the Sift email account, customize each email based on the template, and send it out with a PDF attachment. The script can be easily customized to suit your specific outreach needs.
 ## How you can use this pipeline:
 1. Download VSCode and Python if you do not have them already.
    - VSCode: https://code.visualstudio.com/download
