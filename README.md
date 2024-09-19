@@ -1,4 +1,5 @@
 # Email Outreach Script
+## Project Details: I created an email outreach pipeline to automate outreach efforts for Sift, a Brown University based startup.
 1. Download VSCode and Python if you do not have them already.
    - VSCode: https://code.visualstudio.com/download
    - Python: https://www.python.org/downloads/
